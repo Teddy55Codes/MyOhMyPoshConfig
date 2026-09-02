@@ -10,6 +10,27 @@
   },
   "blocks": [
     {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "spotify",
+          "background": "#1db954",
+          "foreground": "#ffffff",
+          "options": {
+            "playing_icon": "\ue602 ",
+            "paused_icon": "\uf04c ",
+            "stopped_icon": "\uf04d ",
+            "ad_icon": "\ueebb "
+            },
+          "powerline_symbol": "\ue0b4",
+          "leading_diamond": "\ue0b6",
+          "style": "diamond"
+        }
+      ]
+    },
+    {
+      "type": "rprompt",
       "alignment": "right",
       "segments": [
         {
@@ -46,11 +67,12 @@
           "style": "powerline",
           "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}\uf295 \ueb2d "
         }
-      ],
-      "type": "rprompt"
+      ]
     },
     {
+      "type": "prompt",
       "alignment": "left",
+      "newline": true,
       "segments": [
         {
           "type": "os",
@@ -103,19 +125,6 @@
           "powerline_symbol": "\ue0b4",
           "template": " {{ .HEAD }}"
         },
-        {
-          "type": "spotify",
-          "background": "#1db954",
-          "foreground": "#ffffff",
-          "options": {
-            "playing_icon": "\ue602 ",
-            "paused_icon": "\uf04c ",
-            "stopped_icon": "\uf04d ",
-            "ad_icon": "\ueebb "
-            },
-          "style": "powerline",
-          "powerline_symbol": "\ue0b4"
-        },
         /* language specific segements */
         {
           "type": "python",
@@ -133,8 +142,7 @@
           "powerline_symbol": "\ue0b4",
           "template": " \ue77f {{ .Full }} "
         }
-      ],
-      "type": "prompt"
+      ]
     }
   ],
   "final_space": true,
