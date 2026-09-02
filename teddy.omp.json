@@ -72,7 +72,21 @@
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
           "template": "​"
-        },
+        },/* uncomment to enable LastFM
+        {
+          "type": "lastfm",
+          "background": "p:violette",
+          "foreground": "#ffffff",
+          "options": {
+            "api_key": "<YOUR_API_KEY>",
+            "username": "<LASTFM_USERNAME>",
+            "http_timeout": 20000
+          },
+          "powerline_symbol": "\ue0b4",
+          "leading_diamond": "\ue0b6",
+          "style": "powerline",
+          "template": " {{ .Icon }}{{ if ne .Status \"stopped\" }}{{ .Full }}{{ end }} "
+        },*/
         {
           "type": "spotify",
           "background": "p:violette",
