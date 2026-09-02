@@ -4,8 +4,9 @@
         "os": "#ACB0BE",
         "pink": "#F5BDE6",
         "lavender": "#B7BDF8",
+        "violette": "#b581db",
         "blue":  "#8AADF4",
-        "wight": "#FFFFFF",
+        "white": "#FFFFFF",
         "text": "#494D64"
   },
   "blocks": [
@@ -14,15 +15,32 @@
       "alignment": "left",
       "segments": [
         {
+          "type": "text",
           "background": "transparent",
           "foreground": "p:blue",
           "style": "plain",
-          "template": "\u250f",
-          "type": "text"
+          "template": "\u250f"
+          
+        },
+        {
+          "type": "text",
+          "background": "p:blue",
+          "foreground": "p:white",
+          "leading_diamond": "\ue0b6",
+          "style": "diamond",
+          "template": "\u2665 "
+        },
+        {
+          "type": "text",
+          "background": "p:blue",
+          "foreground": "p:white",
+          "powerline_symbol": "\ue0b4",
+          "style": "powerline",
+          "template": "​"
         },
         {
           "type": "spotify",
-          "background": "#1db954",
+          "background": "p:violette",
           "foreground": "#ffffff",
           "options": {
             "playing_icon": "\ue602 ",
@@ -32,11 +50,11 @@
             },
           "powerline_symbol": "\ue0b4",
           "leading_diamond": "\ue0b6",
-          "style": "diamond"
+          "style": "powerline"
         },
         {
           "type": "ytm",
-          "background": "#ff0033",
+          "background": "p:violette",
           "foreground": "#ffffff",
           "options": {
             "playing_icon": "\ue602 ",
@@ -47,7 +65,7 @@
           },
           "powerline_symbol": "\ue0b4",
           "leading_diamond": "\ue0b6",
-          "style": "diamond",
+          "style": "powerline",
           "cache": {
             "duration": "5s",
             "strategy": "session"
@@ -78,7 +96,7 @@
       "segments": [
         {
           "type": "sysinfo",
-          "background": "p:pink",
+          "background": "p:lavender",
           "foreground": "p:text",
           "options": {
             "precision": 2
@@ -98,7 +116,8 @@
           ],
           "foreground": "#242424",
           "powerline_symbol": "\ue0b4",
-          "style": "powerline",
+          "leading_diamond": "\ue0b6",
+          "style": "diamond",
           "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}\uf295 \ueb2d "
         }
       ]
@@ -109,20 +128,20 @@
       "newline": true,
       "segments": [
         {
+          "type": "text",
           "background": "transparent",
           "foreground": "p:blue",
           "style": "plain",
-          "template": "\u2516",
-          "type": "text"
+          "template": "\u2516"
         },
         {
           "type": "os",
           "background": "p:blue",
-          "foreground": "p:wight",
+          "foreground": "p:white",
           "powerline_symbol": "\ue0b4",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
-          "template": "{{.Icon}} "
+          "template": "{{.Icon}}  "
         },
         {
           "type": "session",
