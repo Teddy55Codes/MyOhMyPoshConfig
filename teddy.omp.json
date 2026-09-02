@@ -107,9 +107,17 @@
           "background": "#FF6471",
           "foreground": "#ffffff",
           "style": "powerline",
-          "template": "{{ if .Error }}{{ .Error }}{{ else }} \ue235 {{ .Full }}{{ end }} ",
           "powerline_symbol": "\ue0b4",
+          "template": "{{ if .Error }}{{ .Error }}{{ else }} \ue235 {{ .Full }}{{ end }} ",
           "type": "python"
+        },
+        {
+          "background": "#7355dd",
+          "foreground": "#000000",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b4",
+          "template": " \ue77f {{ .Full }} ",
+          "type": "dotnet"
         }
       ],
       "type": "prompt"
