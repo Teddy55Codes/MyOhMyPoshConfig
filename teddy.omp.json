@@ -45,6 +45,23 @@
             "duration": "5s",
             "strategy": "session"
           }
+        },
+        /* language specific segements */
+        {
+          "type": "python",
+          "background": "#ffd43b",
+          "foreground": "#000000",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b4",
+          "template": "{{ if .Error }}{{ .Error }}{{ else }} \ue235 {{ .Full }}{{ end }} "
+        },
+        {
+          "type": "dotnet",
+          "background": "#7355dd",
+          "foreground": "#000000",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b4",
+          "template": " \ue77f {{ .Full }} "
         }
       ]
     },
@@ -134,23 +151,6 @@
           "style": "powerline",
           "powerline_symbol": "\ue0b4",
           "template": " {{ .HEAD }}"
-        },
-        /* language specific segements */
-        {
-          "type": "python",
-          "background": "#ffd43b",
-          "foreground": "#000000",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b4",
-          "template": "{{ if .Error }}{{ .Error }}{{ else }} \ue235 {{ .Full }}{{ end }} "
-        },
-        {
-          "type": "dotnet",
-          "background": "#7355dd",
-          "foreground": "#000000",
-          "style": "powerline",
-          "powerline_symbol": "\ue0b4",
-          "template": " \ue77f {{ .Full }} "
         }
       ]
     },
