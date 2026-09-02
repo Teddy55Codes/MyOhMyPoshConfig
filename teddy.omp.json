@@ -26,6 +26,25 @@
           "powerline_symbol": "\ue0b4",
           "leading_diamond": "\ue0b6",
           "style": "diamond"
+        },
+        {
+          "type": "ytm",
+          "background": "#ff0033",
+          "foreground": "#ffffff",
+          "options": {
+            "playing_icon": "\ue602 ",
+            "paused_icon": "\uf04c ",
+            "stopped_icon": "\uf04d ",
+            "ad_icon": "\ueebb ",
+            "http_timeout": 1000
+          },
+          "powerline_symbol": "\ue0b4",
+          "leading_diamond": "\ue0b6",
+          "style": "diamond",
+          "cache": {
+            "duration": "5s",
+            "strategy": "session"
+          }
         }
       ]
     },
