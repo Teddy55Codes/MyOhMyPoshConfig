@@ -1,13 +1,45 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "palette": {
-        "os": "#ACB0BE",
-        "pink": "#F5BDE6",
-        "lavender": "#B7BDF8",
-        "violette": "#b581db",
-        "blue":  "#8AADF4",
-        "white": "#FFFFFF",
-        "text": "#494D64"
+    "os": "#acb0be",
+    "pink": "#f5bde6",
+    "lavender": "#b7bdf8",
+    "violette": "#b581db",
+    "blue":  "#8aadf4",
+    "text": "#494d64",
+    /* brand colors */
+    "clojure-primary": "#507dca",
+    "crystal-primary": "#000000",
+    "dart-primary": "#4c87f1",
+    "dotnet-primary": "#7355dd",
+    "elixir-primary": "#6e2e9e",
+    "elixir-secondary": "#1a1221",
+    "fortran-primary": "#734f96",
+    "go-primary": "#007d9c",
+    "haskell-primary": "#999999",
+    "java-primary": "#f29111",
+    "java-secondary": "#00758f",
+    "julia-primary": "#4063d8",
+    "kotlin-primary": "#6b57ff",
+    "lua-primary": "#00007f",
+    "mojo-primary": "#ee790b",
+    "nim-primary": "#f3d400",
+    "nim-secondary": "#171921",
+    "node-primary": "#5fa04e",
+    "ocaml-primary": "#ef7a08",
+    "perl-primary": "#0073a1",
+    "php-primary": "#4F5B93",
+    "python-primary": "#3773a6",
+    "python-secondary": "#ffd43b",
+    "r-primary": "#2266b9",
+    "ruby-primary": "#e2242a",
+    "ruby-secondary": "#322e2b",
+    "rust-primary": "#000000",
+    "swift-primary": "#F05138",
+    "v-primary": "#5d87bf",
+    "vala-primary": "#7239b3",
+    "zig-primary": "#f7a41d",
+    "zig-secondary": "#111111"
   },
   "blocks": [
     {
@@ -25,7 +57,7 @@
         {
           "type": "text",
           "background": "p:blue",
-          "foreground": "p:white",
+          "foreground": "#ffffff",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
           "template": "\u2665 "
@@ -33,7 +65,7 @@
         {
           "type": "text",
           "background": "p:blue",
-          "foreground": "p:white",
+          "foreground": "#ffffff",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
           "template": "​"
@@ -74,7 +106,7 @@
         /* language specific segements */
         {
           "type": "clojure",
-          "background": "#507dca",
+          "background": "p:clojure-primary",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
@@ -83,7 +115,7 @@
         {
           "type": "crystal",
           "background": "#ffffff",
-          "foreground": "#000000",
+          "foreground": "p:crystal-primary",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
           "template": " \ue7ac {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
@@ -91,14 +123,14 @@
         {
           "type": "dart",
           "background": "#0d1520",
-          "foreground": "#4c87f1",
+          "foreground": "p:dart-primary",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
           "template": " \ue64c {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
         },
         {
           "type": "dotnet",
-          "background": "#7355dd",
+          "background": "p:dotnet-primary",
           "foreground": "#000000",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
@@ -106,8 +138,8 @@
         },
         {
           "type": "elixir",
-          "background": "#1a1221",
-          "foreground": "#6e2e9e",
+          "background": "p:elixir-secondary",
+          "foreground": "p:elixir-primary",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
           "template": " \ue7cd {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
@@ -115,14 +147,14 @@
         {
           "type": "fortran",
           "background": "#ffffff",
-          "foreground": "#734f96",
+          "foreground": "p:fortran-primary",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
           "template": " \ue7de {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
         },
         {
           "type": "go",
-          "background": "#007d9c",
+          "background": "p:go-primary",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
@@ -131,22 +163,22 @@
         {
           "type": "haskell",
           "background": "#5e5086",
-          "foreground": "#999999",
+          "foreground": "p:haskell-primary",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
           "template": " \ue777 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
         },
         {
           "type": "java",
-          "background": "#00758f",
-          "foreground": "#f29111",
+          "background": "p:java-secondary",
+          "foreground": "p:java-primary",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
           "template": " \ue738 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
         },
         {
           "type": "julia",
-          "background": "#4063d8",
+          "background": "p:julia-primary",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
@@ -154,7 +186,7 @@
         },
         {
           "type": "kotlin",
-          "background": "#6b57ff",
+          "background": "p:kotlin-primary",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
@@ -162,7 +194,7 @@
         },
         {
           "type": "lua",
-          "background": "#00007f",
+          "background": "p:lua-primary",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
@@ -170,7 +202,7 @@
         },
         {
           "type": "mojo",
-          "background": "#ee790b",
+          "background": "p:mojo-primary",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
@@ -178,15 +210,15 @@
         },
         {
           "type": "nim",
-          "background": "#171921",
-          "foreground": "#f3d400",
+          "background": "p:nim-secondary",
+          "foreground": "p:nim-primary",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
           "template": " \ue841 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
         },
         {
           "type": "node",
-          "background": "#5fa04e",
+          "background": "p:node-primary",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
@@ -195,14 +227,14 @@
         {
           "type": "ocaml",
           "background": "#ffffff",
-          "foreground": "#ef7a08",
+          "foreground": "p:ocaml-primary",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
           "template": " \ue84e {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
         },
         {
           "type": "perl",
-          "background": "#0073a1",
+          "background": "p:perl-primary",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
@@ -210,7 +242,7 @@
         },
         {
           "type": "php",
-          "background": "#4F5B93",
+          "background": "p:php-primary",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
@@ -218,8 +250,8 @@
         },
         {
           "type": "python",
-          "background": "#ffd43b",
-          "foreground": "#3773a6",
+          "background": "p:python-primary",
+          "foreground": "p:python-secondary",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
           "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
@@ -227,15 +259,15 @@
         {
           "type": "r",
           "background": "#ffffff",
-          "foreground": "#2266b9",
+          "foreground": "p:r-primary",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
           "template": " \ue881 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
         },
         {
           "type": "ruby",
-          "background": "#322e2b",
-          "foreground": "#e2242a",
+          "background": "p:ruby-secondary",
+          "foreground": "p:ruby-primary",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
           "template": " \ue605 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
@@ -243,7 +275,7 @@
         {
           "type": "rust",
           "background": "#ffffff",
-          "foreground": "#000000",
+          "foreground": "p:rust-primary",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
           "template": " \ue68b {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
@@ -251,7 +283,7 @@
         {
           "type": "swift",
           "background": "#ffffff",
-          "foreground": "#F05138",
+          "foreground": "p:swift-primary",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
           "template": " \ue755 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
@@ -259,14 +291,14 @@
         {
           "type": "v",
           "background": "#ffffff",
-          "foreground": "#5d87bf",
+          "foreground": "p:v-primary",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
           "template": " \ue6ac {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
         },
         {
           "type": "vala",
-          "background": "#7239b3",
+          "background": "p:vala-primary",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
@@ -274,8 +306,8 @@
         },
         {
           "type": "zig",
-          "background": "#111111",
-          "foreground": "#f7a41d",
+          "background": "p:zig-secondary",
+          "foreground": "p:zig-primary",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
           "template": " \ue6a9 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
@@ -329,7 +361,7 @@
         {
           "type": "os",
           "background": "p:blue",
-          "foreground": "p:white",
+          "foreground": "#ffffff",
           "powerline_symbol": "\ue0b4",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
