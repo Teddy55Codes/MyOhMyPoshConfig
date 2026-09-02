@@ -104,8 +104,22 @@
           "type": "git"
         },
         {
-          "background": "#FF6471",
+          "background": "#1db954",
           "foreground": "#ffffff",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b4",
+          "options": {
+            "playing_icon": "\ue602 ",
+            "paused_icon": "\uf04c ",
+            "stopped_icon": "\uf04d ",
+            "ad_icon": "\ueebb "
+            },
+          "type": "spotify"
+        },
+        /* language specific segements */
+        {
+          "background": "#ffd43b",
+          "foreground": "#000000",
           "style": "powerline",
           "powerline_symbol": "\ue0b4",
           "template": "{{ if .Error }}{{ .Error }}{{ else }} \ue235 {{ .Full }}{{ end }} ",
