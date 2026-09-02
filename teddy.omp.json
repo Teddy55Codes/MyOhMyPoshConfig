@@ -14,6 +14,13 @@
       "alignment": "left",
       "segments": [
         {
+          "background": "transparent",
+          "foreground": "p:blue",
+          "style": "plain",
+          "template": "\u250f",
+          "type": "text"
+        },
+        {
           "type": "spotify",
           "background": "#1db954",
           "foreground": "#ffffff",
@@ -101,6 +108,13 @@
       "alignment": "left",
       "newline": true,
       "segments": [
+        {
+          "background": "transparent",
+          "foreground": "p:blue",
+          "style": "plain",
+          "template": "\u2516",
+          "type": "text"
+        },
         {
           "type": "os",
           "background": "p:blue",
