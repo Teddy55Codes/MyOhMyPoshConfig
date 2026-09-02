@@ -102,6 +102,14 @@
           "powerline_symbol": "\ue0b4",
           "template": " {{ .HEAD }}",
           "type": "git"
+        },
+        {
+          "background": "#FF6471",
+          "foreground": "#ffffff",
+          "style": "powerline",
+          "template": "{{ if .Error }}{{ .Error }}{{ else }} \ue235 {{ .Full }}{{ end }} ",
+          "powerline_symbol": "\ue0b4",
+          "type": "python"
         }
       ],
       "type": "prompt"
