@@ -310,7 +310,7 @@
           "powerline_symbol": "\ue0b4",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
-          "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}\uf295 \ueb2d "
+          "template": "{{ if not .Error }}{{ .Percentage }}\uf295 {{ if ge .Percentage 95 }}󰁹{{ else if .Percentage ge 85 }}󰂂{{ else if .Percentage ge 75 }}󰂁{{ else if .Percentage ge 65 }}󰂀{{ else if .Percentage ge 55 }}󰁿{{ else if .Percentage ge 45 }}󰁾{{ else if .Percentage ge 35 }}󰁽{{ else if .Percentage ge 25 }}󰁼{{ else if .Percentage ge 15 }}󰁻{{ else if .Percentage ge 5 }}󰁺{{ else }}󱃍{{ end }}{{if eq \"Charging\" .State.String}}\ueb2d{{end}} {{ end }}"
         }
       ]
     },
