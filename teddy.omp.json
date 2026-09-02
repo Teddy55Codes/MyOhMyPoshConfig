@@ -296,7 +296,7 @@
           "powerline_symbol": "\ue0b4",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
-          "template": "  {{ round .PhysicalPercentUsed .Precision }}% "
+          "template": " \uefc5 {{ round .PhysicalPercentUsed .Precision }}% "
         },
         {
           "type": "battery",
