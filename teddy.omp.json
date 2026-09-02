@@ -8,7 +8,9 @@
     "blue":  "#8aadf4",
     "text": "#494d64",
     /* brand colors */
+    "aspire-primary": "#7455dd",
     "clojure-primary": "#507dca",
+    "cmake-primary": "#3dae2b",
     "crystal-primary": "#000000",
     "dart-primary": "#4c87f1",
     "dotnet-primary": "#7355dd",
@@ -38,6 +40,7 @@
     "swift-primary": "#F05138",
     "v-primary": "#5d87bf",
     "vala-primary": "#7239b3",
+    "xmake-primary": "#4acf93",
     "zig-primary": "#f7a41d",
     "zig-secondary": "#111111"
   },
@@ -103,7 +106,18 @@
             "strategy": "session"
           }
         },
-        /* language specific segements */
+        /* language/tool specific segements */
+        {
+          "type": "aspire",
+          "background": "p:aspire-primary",
+          "foreground": "#ffffff",
+          "options": {
+            "fetch_running": true
+          },
+          "powerline_symbol": "\ue0b4",
+          "style": "powerline",
+          "template": " \uf4b7 {{ .Name }}{{ if .Running }} \uf04b{{ else }} \uf04c{{ end }} "
+        },
         {
           "type": "clojure",
           "background": "p:clojure-primary",
@@ -111,6 +125,14 @@
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
           "template": " \ue768 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
+        },
+        {
+          "type": "cmake",
+          "background": "p:cmake-primary",
+          "foreground": "#ffffff",
+          "powerline_symbol": "\ue0b4",
+          "style": "powerline",
+          "template": " \ue794 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
         },
         {
           "type": "crystal",
@@ -303,6 +325,14 @@
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
           "template": " \ue8d1 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
+        },
+        {
+          "type": "xmake",
+          "background": "p:xmake-primary",
+          "foreground": "#ffffff",
+          "powerline_symbol": "\ue0b4",
+          "style": "powerline",
+          "template": " xmake {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} "
         },
         {
           "type": "zig",
