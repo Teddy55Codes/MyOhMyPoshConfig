@@ -13,15 +13,16 @@
       "alignment": "right",
       "segments": [
         {
+          "type": "time",
           "background": "#003543",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b4",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
-          "template": "{{ if matchP \"00:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue381{{ else if matchP \"12:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue381{{ else }}{{ end }}{{ if matchP \"01:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue382{{ else if matchP \"13:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue382{{ else }}{{ end }}{{ if matchP \"02:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue383{{ else if matchP \"14:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue383{{ else }}{{ end }}{{ if matchP \"03:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue384{{ else if matchP \"15:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue384{{ else }}{{ end }}{{ if matchP \"04:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue385{{ else if matchP \"16:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue385{{ else }}{{ end }}{{ if matchP \"05:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue386{{ else if matchP \"17:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue389{{ else }}{{ end }}{{ if matchP \"06:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue387{{ else if matchP \"18:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue387{{ else }}{{ end }}{{ if matchP \"07:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue388{{ else if matchP \"19:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue388{{ else }}{{ end }}{{ if matchP \"08:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue389{{ else if matchP \"20:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue389{{ else }}{{ end }}{{ if matchP \"09:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue38a{{ else if matchP \"21:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue38a{{ else }}{{ end }}{{ if matchP \"10:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue38b{{ else if matchP \"22:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue38b{{ else }}{{ end }}{{ if matchP \"11:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue38c{{ else if matchP \"23:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue38c{{ else }}{{ end }} {{ .CurrentDate | date .Format }} ",
-          "type": "time"
+          "template": "{{ if matchP \"00:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue381{{ else if matchP \"12:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue381{{ else }}{{ end }}{{ if matchP \"01:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue382{{ else if matchP \"13:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue382{{ else }}{{ end }}{{ if matchP \"02:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue383{{ else if matchP \"14:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue383{{ else }}{{ end }}{{ if matchP \"03:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue384{{ else if matchP \"15:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue384{{ else }}{{ end }}{{ if matchP \"04:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue385{{ else if matchP \"16:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue385{{ else }}{{ end }}{{ if matchP \"05:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue386{{ else if matchP \"17:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue389{{ else }}{{ end }}{{ if matchP \"06:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue387{{ else if matchP \"18:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue387{{ else }}{{ end }}{{ if matchP \"07:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue388{{ else if matchP \"19:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue388{{ else }}{{ end }}{{ if matchP \"08:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue389{{ else if matchP \"20:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue389{{ else }}{{ end }}{{ if matchP \"09:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue38a{{ else if matchP \"21:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue38a{{ else }}{{ end }}{{ if matchP \"10:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue38b{{ else if matchP \"22:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue38b{{ else }}{{ end }}{{ if matchP \"11:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue38c{{ else if matchP \"23:.+:.+\" (localeShortTime .CurrentDate | date .Format) }}\ue38c{{ else }}{{ end }} {{ .CurrentDate | date .Format }} "
         },
         {
+          "type": "executiontime",
           "background": "#83769c",
           "foreground": "#ffffff",
           "options": {
@@ -30,10 +31,10 @@
           "powerline_symbol": "\ue0b4",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
-          "template": " \ueba2 {{ .FormattedMs }} ",
-          "type": "executiontime"
+          "template": " \ueba2 {{ .FormattedMs }} "
         },
         {
+          "type": "battery",
           "background": "#f36943",
           "background_templates": [
             "{{if eq \"Charging\" .State.String}}#33DD2D{{end}}",
@@ -43,8 +44,7 @@
           "foreground": "#242424",
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
-          "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}\uf295 \ueb2d ",
-          "type": "battery"
+          "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}\uf295 \ueb2d "
         }
       ],
       "type": "rprompt"
@@ -53,23 +53,24 @@
       "alignment": "left",
       "segments": [
         {
+          "type": "os",
           "background": "p:blue",
           "foreground": "p:wight",
           "powerline_symbol": "\ue0b4",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
-          "template": "{{.Icon}} ",
-          "type": "os"
+          "template": "{{.Icon}} "
         },
         {
+          "type": "session",
           "background": "p:blue",
           "foreground": "p:text",
           "powerline_symbol": "\ue0b4",
           "style": "diamond",
-          "template": "{{ .UserName }}@{{ .HostName }}",
-          "type": "session"
+          "template": "{{ .UserName }}@{{ .HostName }}"
         },
         {
+          "type": "path",
           "background": "p:pink",
           "foreground": "p:text",
           "options": {
@@ -80,13 +81,12 @@
           },
           "powerline_symbol": "\ue0b4",
           "style": "powerline",
-          "template": " {{ .Path }}",
-          "type": "path"
+          "template": " {{ .Path }}"
         },
         {
+          "type": "git",
           "background": "p:lavender",
           "foreground": "p:text",
-          "style": "powerline",
           "options": {
             "branch_icon": "\ue725 ",
             "cherry_pick_icon": "\ue29b ",
@@ -99,39 +99,39 @@
             "revert_icon": "\uf0e2 ",
             "tag_icon": "\uf412 "
           },
-          "powerline_symbol": "\ue0b4",
-          "template": " {{ .HEAD }}",
-          "type": "git"
-        },
-        {
-          "background": "#1db954",
-          "foreground": "#ffffff",
           "style": "powerline",
           "powerline_symbol": "\ue0b4",
+          "template": " {{ .HEAD }}"
+        },
+        {
+          "type": "spotify",
+          "background": "#1db954",
+          "foreground": "#ffffff",
           "options": {
             "playing_icon": "\ue602 ",
             "paused_icon": "\uf04c ",
             "stopped_icon": "\uf04d ",
             "ad_icon": "\ueebb "
             },
-          "type": "spotify"
+          "style": "powerline",
+          "powerline_symbol": "\ue0b4"
         },
         /* language specific segements */
         {
+          "type": "python",
           "background": "#ffd43b",
           "foreground": "#000000",
           "style": "powerline",
           "powerline_symbol": "\ue0b4",
-          "template": "{{ if .Error }}{{ .Error }}{{ else }} \ue235 {{ .Full }}{{ end }} ",
-          "type": "python"
+          "template": "{{ if .Error }}{{ .Error }}{{ else }} \ue235 {{ .Full }}{{ end }} "
         },
         {
+          "type": "dotnet",
           "background": "#7355dd",
           "foreground": "#000000",
           "style": "powerline",
           "powerline_symbol": "\ue0b4",
-          "template": " \ue77f {{ .Full }} ",
-          "type": "dotnet"
+          "template": " \ue77f {{ .Full }} "
         }
       ],
       "type": "prompt"
