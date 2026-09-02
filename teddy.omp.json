@@ -60,7 +60,9 @@
         {
           "type": "text",
           "background": "p:blue",
-          "foreground": "#ffffff",
+          "foreground_templates": [
+            "{{ if .Root }}#ff0000{{ else }}#ffffff{{ end }}"
+          ],
           "leading_diamond": "\ue0b6",
           "style": "diamond",
           "template": "\u2665 "
