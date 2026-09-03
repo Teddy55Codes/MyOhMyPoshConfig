@@ -103,7 +103,7 @@
             "paused_icon": "\uf04c ",
             "stopped_icon": "\uf04d ",
             "ad_icon": "\ueebb "
-            },
+          },
           "powerline_symbol": "\ue0b4",
           "leading_diamond": "\ue0b6",
           "style": "powerline"

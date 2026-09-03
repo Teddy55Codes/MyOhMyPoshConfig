@@ -1,6 +1,6 @@
 # My Oh My Posh Config
 
-Config was only tested with zsh, some functionality may break on other shells.
+This config was only tested with zsh, some functionality may break on other shells.
 
 For information about setting up oh my posh visit [ohmyposh.dev/docs/installation](https://ohmyposh.dev/docs/installation).
 
@@ -22,6 +22,8 @@ For information about setting up oh my posh visit [ohmyposh.dev/docs/installatio
    * Charging plug icon is shown when device is charging.
    * Background is green when charging, orange when discharging and blue when full.
 3. Clock icon is accurate to the current hour of the day.
+
+Additionally, this theme also contains transient- and secondary-prompts.
 
 ## Supported Apps/Tools/Languages
 
