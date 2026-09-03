@@ -489,7 +489,7 @@
   ],
   "transient_prompt": {
     "background": "transparent",
-    "template": "<p:blue>\ue0b6</>{{ if .Root }}<#ff0000,p:blue>{{ else }}<#ffffff,p:blue>{{ end }}{{ .Segments.Heart.Segment.Text }} </><p:text,p:blue>{{ .Segments.Session.Segment.Text }}</><p:blue,p:pink>\ue0b4</><p:text,p:pink>{{ .Segments.Path.Segment.Text }}</><p:pink,p:lavender>\ue0b4</><p:text,p:lavender>{{ .Segments.Git.Segment.Text }}</><p:lavender>\ue0b4</> ",
+    "template": "<p:blue>\ue0b6</>{{ if .Root }}<#ff0000,p:blue>{{ else }}<#ffffff,p:blue>{{ end }}{{ .Segments.Heart.Segment.Text }} </><p:text,p:blue>{{ .Segments.Session.Segment.Text }}</><p:blue,p:pink>\ue0b4</><p:text,p:pink>{{ .Segments.Path.Segment.Text }}</>{{ if .Segments.Git.Segment.Text }}<p:pink,p:lavender>\ue0b4</>{{ else }}<p:pink,>\ue0b4</>{{ end }}<p:text,p:lavender>{{ .Segments.Git.Segment.Text }}</>{{ if .Segments.Git.Segment.Text }}<p:lavender>\ue0b4</>{{ end }} ",
     "right_template": "<p:lavender>\ue0b6</><p:text,p:lavender>{{ .Segments.Time.Segment.Text }}</><#83769c,p:lavender>\ue0b6</><#ffffff,#83769c>{{ .Segments.Executiontime.Segment.Text }}</>"
   },
   "final_space": true,
