@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1187.94" height="148.07" viewBox="0 0 1187.94 148.07" font-family="&quot;CaskaydiaCove Nerd Font Mono&quot;, &quot;FiraCode Nerd Font Mono&quot;, &quot;Hack Nerd Font Mono&quot;, &quot;CaskaydiaCove Nerd Font&quot;, &quot;FiraCode Nerd Font&quot;, &quot;Hack Nerd Font&quot;, ui-monospace, monospace" font-size="16px">
+<path class="omp-window-header" fill="#2b2b2b" d="M 4,0 H 1183.94 A 4,4 0 0 1 1187.94,4 V 26.67 H 0 V 4 A 4,4 0 0 1 4,0 Z"/>
+<path class="omp-window-content" fill="#151515" d="M 0,26.67 H 1187.94 V 144.07 A 4,4 0 0 1 1183.94,148.07 H 4 A 4,4 0 0 1 0,144.07 Z"/>
+<rect class="omp-window" x="0.5" y="0.5" width="1186.94" height="147.07" rx="4" fill="none" stroke="#404040" stroke-width="1"/>
+<text xml:space="preserve" class="omp-window-control" x="1110.6" y="18.47" font-size="14.67px" fill="#cfcfcf" text-anchor="middle">−</text>
+<text xml:space="preserve" class="omp-window-control" x="1141.27" y="18.47" font-size="14.67px" fill="#cfcfcf" text-anchor="middle">▢</text>
+<text xml:space="preserve" class="omp-window-control" x="1171.94" y="18.47" font-size="14.67px" fill="#cfcfcf" text-anchor="middle">×</text>
+<text xml:space="preserve" x="16" y="59.43" textLength="9.63" lengthAdjust="spacingAndGlyphs" fill="#8aadf4">┏</text>
+<text xml:space="preserve" x="25.63" y="59.43" textLength="9.63" lengthAdjust="spacingAndGlyphs" fill="#8aadf4"></text>
+<rect x="35.27" y="44.48" width="19.27" height="18.81" fill="#8aadf4"/>
+<text xml:space="preserve" x="35.27" y="59.43" textLength="19.27" lengthAdjust="spacingAndGlyphs" fill="#ffffff">♥ </text>
+<rect x="54.53" y="44.48" width="9.63" height="18.81" fill="#8aadf4"/>
+<text xml:space="preserve" x="54.53" y="59.43" textLength="9.63" lengthAdjust="spacingAndGlyphs" fill="#8aadf4"></text>
+<text xml:space="preserve" x="64.16" y="59.43" textLength="9.63" lengthAdjust="spacingAndGlyphs" fill="#8aadf4"></text>
+<text xml:space="preserve" x="73.8" y="59.43" textLength="924.75" lengthAdjust="spacingAndGlyphs" fill="#8aadf4">                                                                                                </text>
+<text xml:space="preserve" x="998.55" y="59.43" textLength="9.63" lengthAdjust="spacingAndGlyphs" fill="#b7bdf8"></text>
+<rect x="1008.18" y="44.48" width="86.7" height="18.81" fill="#b7bdf8"/>
+<text xml:space="preserve" x="1008.18" y="59.43" textLength="86.7" lengthAdjust="spacingAndGlyphs" fill="#494d64">  62.5% </text>
+<rect x="1094.88" y="44.48" width="9.63" height="18.81" fill="#b7bdf8"/>
+<text xml:space="preserve" x="1094.88" y="59.43" textLength="9.63" lengthAdjust="spacingAndGlyphs" fill="#33dd2d"></text>
+<rect x="1104.51" y="44.48" width="67.43" height="18.81" fill="#33dd2d"/>
+<text xml:space="preserve" x="1104.51" y="59.43" textLength="67.43" lengthAdjust="spacingAndGlyphs" fill="#242424">42 󰁽 </text>
+<text xml:space="preserve" x="16" y="81.78" textLength="9.63" lengthAdjust="spacingAndGlyphs" fill="#8aadf4">┖</text>
+<text xml:space="preserve" x="25.63" y="81.78" textLength="9.63" lengthAdjust="spacingAndGlyphs" fill="#8aadf4"></text>
+<rect x="35.27" y="66.83" width="28.9" height="18.81" fill="#8aadf4"/>
+<text xml:space="preserve" x="35.27" y="81.78" textLength="28.9" lengthAdjust="spacingAndGlyphs" fill="#ffffff">  </text>
+<rect x="64.16" y="66.83" width="105.96" height="18.81" fill="#8aadf4"/>
+<text xml:space="preserve" x="64.16" y="81.78" textLength="105.96" lengthAdjust="spacingAndGlyphs" fill="#494d64">teddy@teddy</text>
+<rect x="170.13" y="66.83" width="9.63" height="18.81" fill="#f5bde6"/>
+<text xml:space="preserve" x="170.13" y="81.78" textLength="9.63" lengthAdjust="spacingAndGlyphs" fill="#8aadf4"></text>
+<rect x="179.76" y="66.83" width="163.76" height="18.81" fill="#f5bde6"/>
+<text xml:space="preserve" x="179.76" y="81.78" textLength="163.76" lengthAdjust="spacingAndGlyphs" fill="#494d64"> ~/dev/oh-my-posh</text>
+<text xml:space="preserve" x="343.52" y="81.78" textLength="9.63" lengthAdjust="spacingAndGlyphs" fill="#f5bde6"></text>
+<text xml:space="preserve" x="353.15" y="81.78" textLength="9.63" lengthAdjust="spacingAndGlyphs" fill="#f5bde6"> </text>
+<text xml:space="preserve" x="362.78" y="81.78" textLength="9.63" lengthAdjust="spacingAndGlyphs" fill="#ffffff">_</text>
+<text xml:space="preserve" x="372.41" y="81.78" textLength="587.6" lengthAdjust="spacingAndGlyphs" fill="#ffffff">                                                             </text>
+<text xml:space="preserve" x="960.02" y="81.78" textLength="9.63" lengthAdjust="spacingAndGlyphs" fill="#b7bdf8"></text>
+<rect x="969.65" y="66.83" width="105.96" height="18.81" fill="#b7bdf8"/>
+<text xml:space="preserve" x="969.65" y="81.78" textLength="105.96" lengthAdjust="spacingAndGlyphs" fill="#494d64"> 07:03:06 </text>
+<rect x="1075.61" y="66.83" width="9.63" height="18.81" fill="#b7bdf8"/>
+<text xml:space="preserve" x="1075.61" y="81.78" textLength="9.63" lengthAdjust="spacingAndGlyphs" fill="#83769c"></text>
+<rect x="1085.24" y="66.83" width="86.7" height="18.81" fill="#83769c"/>
+<text xml:space="preserve" x="1085.24" y="81.78" textLength="86.7" lengthAdjust="spacingAndGlyphs" fill="#ffffff">  734ms </text>
+<text xml:space="preserve" x="16" y="126.48" textLength="115.59" lengthAdjust="spacingAndGlyphs" fill="#ffffff" font-weight="bold">ohmyposh.dev</text>
+</svg>
